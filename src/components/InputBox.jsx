@@ -13,7 +13,7 @@ function InputBox({
 }) {
   const id = useId()
 
-  // Allow only digits and a single decimal point
+  
   const handleChange = (e) => {
     const value = e.target.value
     if (/^\d*\.?\d*$/.test(value)) onAmountChange && onAmountChange(value)
